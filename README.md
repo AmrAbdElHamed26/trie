@@ -6,8 +6,22 @@ This package provides a basic implementation of a Trie data structure in Dart. I
 
 - **Efficient word insertion**: Adds words to the Trie with associated details.
 - **Prefix-based search**: Retrieve all words starting with a given prefix.
-- **Memory efficient**: Significantly more memory-efficient than using a List for large datasets.
+- **Memory efficient**: Significantly more memory-efficient than using a List for large datasets with common prefixes.
 - **Clear method**: Easily reset the Trie by deleting all stored data.
+
+
+## Memory and Time Efficiency
+
+### Memory Efficiency:
+- The Trie stores common prefixes once, which reduces memory usage compared to a List, where each word (even with common prefixes) is stored separately.
+- The visual below demonstrates how a Trie uses less memory by sharing nodes for common prefixes, compared to a List storing each word in full.
+
+### Time Efficiency:
+- Tries provide faster search and insert operations compared to Lists. Inserting or searching for a word in a Trie takes O(L) time, where L is the length of the word. In contrast, searching or inserting in a List takes O(N) time, where N is the number of words.
+- As the dataset 
+
+![Trie Data Structure Efficiency](https://github.com/user-attachments/assets/b576e392-9f1a-48e7-8a38-4e0f7d3f879e)
+
 
 ## Getting Started
 
